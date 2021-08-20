@@ -22,8 +22,8 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 describe('4 - Quem sobreviveu?', () => {
   // Adicione seu código aqui
   beforeEach(() => {
-    adventure.randomAttack()
-  })
+    adventure.randomAttack();
+  });
 
   test('depois da primeira aventura', () => {
     expect(adventure.specialists.length).toBe(5);
@@ -39,6 +39,6 @@ describe('4 - Quem sobreviveu?', () => {
   });
   test('depois da quinta aventura', () => {
     expect(adventure.specialists.length).toBe(1);
-    console.log('O '+adventure.specialists[0].nome+' sobreviveu !!! , Por pouco.')
+    console.log(`O ${adventure.specialists[0].nome} sobreviveu !!! , Por pouco.`);
   });
 });
