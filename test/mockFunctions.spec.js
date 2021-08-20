@@ -16,6 +16,8 @@ ATENÇÃO!!! Edite apenas este arquivo. Não altere os arquivos da pasta 'src'.
 
 describe('3 - Verifica as funções e os mocks', () => {
   // Crie suas mock functions aqui
+  //Anotação: eu poderia ter usado o jest.spyOn e n ter usado o jest.mock no inicio Ex :
+  //jest.spyOn(mockFunctions, 'add').mockImplementation((a, b) => a + b);
   mockFunctions.add.mockImplementation((a, b) => a + b);
   mockFunctions.subtract.mockImplementation((a, b) => a - b);
   mockFunctions.multiply.mockImplementation((a, b) => a * b);
